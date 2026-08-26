@@ -193,6 +193,14 @@ nav {
         padding-left: 0;
         padding-top: 25px;
     }
+
+        .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
 }
 
 /* =========================
@@ -239,4 +247,86 @@ nav {
 .about-details p {
     color: #6b7280;
     margin-bottom: 30px;
+}
+
+/* =========================
+   PROJECTS SECTION
+   ========================= */
+
+.projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 30px;
+}
+
+.section-heading > p:last-child {
+    max-width: 650px;
+    color: #6b7280;
+    font-size: 1.05rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 35px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-type {
+    color: #2563eb;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.6rem;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.technologies span {
+    background-color: #eff6ff;
+    color: #2563eb;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.project-link {
+    color: #111827;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #2563eb;
 }
