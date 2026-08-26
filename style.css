@@ -330,3 +330,13 @@ nav {
 .project-link:hover {
     color: #2563eb;
 }
+
+/* =========================
+   RESUME SECTION
+   ========================= */
+
+.resume {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 30px;
+}
